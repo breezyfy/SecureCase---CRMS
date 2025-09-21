@@ -23,7 +23,7 @@ public class mysqlconnect {
     public static Connection ConnectDb(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/backend","root","7972797102");
+            Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/backend","","");
            // JOptionPane.showMessageDialog(null, "Connection Established");
             return conn;
         } catch (Exception e) {
@@ -71,4 +71,5 @@ public class mysqlconnect {
     
     
     
+
 }
